@@ -1,0 +1,31 @@
+<div class="container">
+    <div>
+    <h2>Ajouter un vetement :</h2>
+    </div>
+    <form >
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >ID vet</label>
+        <input type="text" [(ngModel)]="newvetement.idvetements"
+        name="idProduit" class="form-control">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >Nom vet</label>
+        <input type="text"[(ngModel)]= "newvetement.nomVetement"
+        name="nomProduit" class="form-control">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >Prix vet</label>
+        <input type="number" [(ngModel)]= "newvetement.prixVetement"
+        name="prixProduit" class="form-control">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <label >Date création</label>
+        <input type="date" [(ngModel)]= "newvetement.dateCreation"
+        name="dateCreation" class="form-control">
+        </div>
+        <div class="mt-2">
+        <button type="submit" (click)="addVetement()"class="btn btn-success" routerLink="/vetements">Ajouter</button>
+        </div>
+        </form>
+        
+        </div>
